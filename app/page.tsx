@@ -4,6 +4,7 @@ import AdmissionForm from "./components/AdmissionForm";
 import StoriesHighlights from "./components/StoriesHighlights";
 import ExcellenceSection from "./components/ExcellenceSection";
 import WhyChooseSection from "./components/WhyChooseSection";
+import ResearchSection from "./components/ResearchSection";
 import {
   AwardIcon,
   MedalIcon,
@@ -172,6 +173,9 @@ export default function Home() {
 
       {/* ===== Why Choose Sanskriti? ===== */}
       <WhyChooseSection />
+
+      {/* ===== Cutting Edge Research ===== */}
+      <ResearchSection />
     </div>
   );
 }
