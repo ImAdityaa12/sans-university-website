@@ -148,3 +148,132 @@ export function PillarIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+function stroke(props: SVGProps<SVGSVGElement>) {
+  return {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.9,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true,
+    ...props,
+  };
+}
+
+export function BellIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+      <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+    </svg>
+  );
+}
+
+export function GlobeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+    </svg>
+  );
+}
+
+export function UsersIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  );
+}
+
+export function CheckCircleIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+      <path d="m9 11 3 3L22 4" />
+    </svg>
+  );
+}
+
+export function DownloadIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+    </svg>
+  );
+}
+
+export function DocumentIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+      <path d="M14 2v5h5M8 13h8M8 17h8M8 9h2" />
+    </svg>
+  );
+}
+
+export function LightbulbIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M15 14c.2-1 .7-1.7 1.5-2.5C17.7 10.2 18 9 18 8a6 6 0 0 0-12 0c0 1 .2 2.2 1.5 3.5.7.8 1.3 1.5 1.5 2.5M9 18h6M10 22h4" />
+    </svg>
+  );
+}
+
+export function BookOpenIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+    </svg>
+  );
+}
+
+export function CpuIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <rect x="6" y="6" width="12" height="12" rx="2" />
+      <path d="M9 9h6v6H9zM15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2" />
+    </svg>
+  );
+}
+
+export function DnaIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <path d="M9.5 19.5a3.5 3.5 0 0 1 0-7L12 11l2.5-1.5a3.5 3.5 0 0 0 0-7" />
+      <path d="M14.5 4.5a3.5 3.5 0 0 1 0 7L12 13l-2.5 1.5a3.5 3.5 0 0 0 0 7" />
+      <path d="M9 4h6M9 20h6M8 8h8M8 16h8" />
+    </svg>
+  );
+}
+
+export function AtomIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...stroke(props)}>
+      <circle cx="12" cy="12" r="1.5" />
+      <ellipse cx="12" cy="12" rx="10" ry="4.5" />
+      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)" />
+      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)" />
+    </svg>
+  );
+}
+
+export function PlayIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
+      <path d="M8 5.14v13.72a1 1 0 0 0 1.52.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z" />
+    </svg>
+  );
+}
+
+export function QuoteIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
+      <path d="M7.5 5C5 5 3 7 3 9.5S5 14 7.5 14c0 2-1.5 3.5-3.5 4 4 0 7-3 7-8.5C11 6 9.5 5 7.5 5Zm9 0C14 5 12 7 12 9.5s2 4.5 4.5 4.5c0 2-1.5 3.5-3.5 4 4 0 7-3 7-8.5C20 6 18.5 5 16.5 5Z" />
+    </svg>
+  );
+}

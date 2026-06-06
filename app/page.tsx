@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import AdmissionForm from "./components/AdmissionForm";
 import StoriesHighlights from "./components/StoriesHighlights";
+import ExcellenceSection from "./components/ExcellenceSection";
 import {
   AwardIcon,
   MedalIcon,
@@ -164,6 +165,9 @@ export default function Home() {
 
       {/* ===== Stories & Highlights ===== */}
       <StoriesHighlights />
+
+      {/* ===== Latest Updates + Excellence in Every Number ===== */}
+      <ExcellenceSection />
     </div>
   );
 }
