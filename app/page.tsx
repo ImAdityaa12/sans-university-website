@@ -8,6 +8,7 @@ import ResearchSection from "./components/ResearchSection";
 import ChancellorNewsSection from "./components/ChancellorNewsSection";
 import LifeAtSU from "./components/LifeAtSU";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 import {
   AwardIcon,
   MedalIcon,
@@ -188,6 +189,9 @@ export default function Home() {
 
       {/* ===== Testimonials ===== */}
       <Testimonials />
+
+      {/* ===== Footer ===== */}
+      <Footer />
     </div>
   );
 }
