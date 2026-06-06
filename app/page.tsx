@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import AdmissionForm from "./components/AdmissionForm";
 import StoriesHighlights from "./components/StoriesHighlights";
 import ExcellenceSection from "./components/ExcellenceSection";
+import WhyChooseSection from "./components/WhyChooseSection";
 import {
   AwardIcon,
   MedalIcon,
@@ -168,6 +169,9 @@ export default function Home() {
 
       {/* ===== Latest Updates + Excellence in Every Number ===== */}
       <ExcellenceSection />
+
+      {/* ===== Why Choose Sanskriti? ===== */}
+      <WhyChooseSection />
     </div>
   );
 }
