@@ -5,6 +5,7 @@ import StoriesHighlights from "./components/StoriesHighlights";
 import ExcellenceSection from "./components/ExcellenceSection";
 import WhyChooseSection from "./components/WhyChooseSection";
 import ResearchSection from "./components/ResearchSection";
+import ChancellorNewsSection from "./components/ChancellorNewsSection";
 import {
   AwardIcon,
   MedalIcon,
@@ -176,6 +177,9 @@ export default function Home() {
 
       {/* ===== Cutting Edge Research ===== */}
       <ResearchSection />
+
+      {/* ===== Chancellor's Desk + In The News ===== */}
+      <ChancellorNewsSection />
     </div>
   );
 }
